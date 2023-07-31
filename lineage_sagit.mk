@@ -24,6 +24,20 @@ $(call inherit-product, device/xiaomi/sagit/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# GMS
+WITH_GMS := false
+#TARGET_CORE_GMS := true
+#TARGET_CORE_GMS_EXTRAS := false
+#TARGET_ENABLE_PRIVAPP_ENFORCEMENT := true
+
+# Rom flags
+RISING_MAINTAINER := Lonelystar
+RISING_CHIPSET := msm8998
+SUSHI_BOOTANIMATION := 1080
+TARGET_ENABLE_BLUR := true
+TARGET_USE_PIXEL_FINGERPRINT := true
+TARGET_BUILD_APERTURE_CAMERA := true
+
 PRODUCT_NAME := lineage_sagit
 PRODUCT_DEVICE := sagit
 PRODUCT_BRAND := Xiaomi
@@ -35,7 +49,7 @@ PRODUCT_SYSTEM_NAME := sagit
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="sagit-user 8.0.0 OPR1.170623.027 V9.2.3.0.OCAMIEK release-keys" \
+    PRIVATE_BUILD_DESC="sagit-user 9 PKQ1.190118.001 V11.0.6.0.PCAMIXM release-keys" \
     TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
 
-BUILD_FINGERPRINT := Xiaomi/sagit/sagit:8.0.0/OPR1.170623.027/V9.2.3.0.OCAMIEK:user/release-keys
+BUILD_FINGERPRINT := Xiaomi/sagit/sagit:9/PKQ1.190118.001/V11.0.6.0.PCAMIXM:user/release-keys

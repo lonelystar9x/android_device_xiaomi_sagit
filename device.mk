@@ -46,6 +46,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.sagit
 
+# QPGallery
+PRODUCT_PACKAGES += \
+     QPGallery
+
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Wifi
 PRODUCT_PACKAGES += \
     SagitWifiOverlay
