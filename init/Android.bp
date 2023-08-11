@@ -1,0 +1,9 @@
+cc_library_static {
+    name: "libinit_sagit",
+    recovery_available: true,
+    srcs: ["init_sagit.cpp"],
+    include_dirs: [
+        "system/core/init"
+    ],
+    shared_libs: ["libbase"],
+}
